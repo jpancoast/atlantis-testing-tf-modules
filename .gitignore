@@ -1,0 +1,16 @@
+#  Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+[gG]emFile.lock
+
+**/.kitchen/*
+
+**/*.vscode
+**/.vagrant
+**/*.log
+
+**/inspec.lock
