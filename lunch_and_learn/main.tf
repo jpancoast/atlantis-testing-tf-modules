@@ -17,11 +17,9 @@ resource "aws_vpc" "main" {
 #   Second bit: Add the IGW
 #
 
-
 #
 #   IGW for the public subnet.
 #
-#resource "aws_internet_gateway" "igw" {
-#  vpc_id = "${aws_vpc.main.id}"
-#}
-
+resource "aws_internet_gateway" "igw" {
+  vpc_id = "${aws_vpc.main.id}"
+}
